@@ -2,9 +2,10 @@ import { Formik, Field } from "formik";
 import { StyledForm, ButtomStyle } from "./StyledForm";
 import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "Redux/contactsSlice";
+
 import { nanoid } from "@reduxjs/toolkit";
 import { selectContacts } from "Redux/selectors";
+import { addContact } from "Redux/operations";
 
 const schema = yup.object().shape({
     name: yup.string().required(),
