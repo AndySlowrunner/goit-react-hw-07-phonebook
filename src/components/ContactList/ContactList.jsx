@@ -14,7 +14,6 @@ export const ContactList = () => {
                     <p>{name}:{' ' + phone}</p>
                     <button onClick={() => {
                         dispatch(deleteContact(id));
-                        console.log(id);
                     }}>Delete</button>
                 </StyledList>
             )}
